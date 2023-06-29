@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*Header*/
+.sectionPersonajes{
+  height: 100vh;
+  position: relative;
+  background-image:url(./img/ilustracion-paisaje-campos-verano_176516-562.avif);
+  /* background-image: url(./img/30205.jpg); */
+  background-size: cover;
+  overflow: hidden;
+  min-width: 1100px;
+}
+
+.hero_header img{
+  width: 150px;
+}
+
+.hero_header{
+  background-color: #88C546;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5rem ;
+}
+
+.header_right{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.header_right .menu{
+  list-style: none;
+  display: flex;
+  font-size: 1.2rem;
+  gap: 2rem;
+}
+
+.header_right a{
+  color: white;
+}
+
+/*personaje*/
+
+.img img{
+  height: 93%;
+  position: absolute;
+  right: 100px;
+  bottom: 0px;
+}
+
+.animacionPersonaje{
+  animation: personaje .2s ;
+}
+
+@keyframes personaje{
+  0%{
+      transform: translatex(1000px);
+  }
+  100%{
+      transform: translatex(0px);  
+  }
+}
+
+.containerPersonajes{
+  /* background-color: rgba(255, 0, 0, 0.339); */
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 900px;
+  width: 100%;
+  height: 88vh;
+  align-items: center;
+  position: relative;
+  
+}
+
+.infoPersonajes{
+  display: flex;
+  position: absolute;
+  left: -100px;
+  top: 20%
+}
+
+.infoTitle{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  line-height: normal;
+}
+
+.idioma{
+  background-color: #01010196;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 15px;
+  padding: 0 .2rem 0 .3rem;
+  color: #88C546;
+  cursor: pointer;
+}
+
+.circle{
+  border-radius: 50%;
+  background-color: #88C546;
+  width: 20px;
+  height: 20px;
+}
+
+.fondoText{
+  cursor: pointer;
+  background-color:#a8ff4bb6 ;
+  padding: 0 .2rem 0 .3rem;
+  border-radius: 15px;
+}
+
+.infoTitle h1{
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.infoParrafo {
+  display: flex;
+  background-color: #01010180;
+  color: white;
+  width: 550px;
+  padding: 10px 10px 10px 15px;
+  margin-top: 17px;
+  gap: 1rem;
+}
+
+i{
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+
+.listPersonajes{
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  /* background-color: green; */
+}
+.personajes{
+  display: flex;
+  gap: 2rem;  
+  cursor: pointer;
+}
+
+.juan, .ana, .lucas, .gomez{
+  background-color: rgba(0, 0, 0, 0.256);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  
+}
+
+.personajes p{
+  padding: .5rem;
+  background-color: rgba(0, 0, 0, 0.709);
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 1400px){
+  .infoPersonajes{
+    top: 10%;
+    left: 0;
+  }
+  .img img{
+    right: 40px;
+  }
+  .infoParrafo{
+    overflow: auto; /* o scroll */
+    max-height: 150px; /* Ajusta la altura máxima según tus necesidades */
+  }
+}
