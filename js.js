@@ -45,7 +45,7 @@ function cambiarPersonaje(e){
         idioma.style.flexDirection = 'row'
         idiomaText.innerText = 'ES'
         console.log('Estas en Gomez');
-        imagenPrincipal.src = './img/señoraRosadaprincipal.png';
+        imagenPrincipal.src = './img/señoraRosadaPrincipal.png';
         imagenPrincipal.classList.add('animacionPersonaje');
         setTimeout(function() {imagenPrincipal.classList.remove('animacionPersonaje');}, 300);
         titulo.innerText = 'GOMEZ';
